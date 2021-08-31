@@ -1,0 +1,233 @@
+<html>
+<head>
+	<title>Registration</title>
+	<style>
+ input[type=text], select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+ input[type=date], select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 40%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.dive {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+
+}
+ body {
+  background-image: url('Screenshot_20200212_204311.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+table, th, td {
+  border-collapse: collapse;
+ padding: 5px;
+border-spacing:10px;
+}
+
+.dropbtn {
+  background-color: rgba(255,255,255,0.0);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  }
+.box {
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1.2);
+  }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,1.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  font-size: 15px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #4CAF50;}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+</style>
+<script>
+  function sub()
+  {
+    window.alert("Congrats! Your application is Submitted. UserId and Password is mailed to your Email.");
+  }
+  </script>
+</head>
+<body>
+
+	<table>
+<tr>
+<td style="width:55%"><left><img style="width:300px;height:100px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,1.2);" src="logo.jpg"></left></td>
+<td><div class ="box">
+<div class="dropdown">
+  <button class="dropbtn"><b>HOME</b></button>
+  <div class="dropdown-content">
+    <a href="school website.html">Home Page</a>
+    <a href="360.html">360 view of SCHOOL</a>
+    
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn"><b>ABOUT</b></button>
+  <div class="dropdown-content">
+    <a href="about.html">About School</a>
+   <a href="topper.html">Toppers Story</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn"><b>ADMISSIONS</b></button>
+  <div class="dropdown-content">
+    <a href="login.html">LogIn</a>
+    
+  
+    <a href="full-3.pdf">Fee Structure</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn"><b>GALLERY</b></button>
+  <div class="dropdown-content">
+    <a href="gallery.html">Photo Gallery</a>
+
+ 
+
+  </div>
+</div>
+
+ <div class="dropdown">
+  <button class="dropbtn"><b>CONTACT US</b></button>
+  <div class="dropdown-content">
+ <a href="contact.png">Reach Us</a>
+ 
+ 
+
+  </div>
+</div></div>
+</td> 
+</tr>
+
+</table>
+<br><br><br><br>
+<center>
+  <table style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,1.2);width:1200px">
+<tr>   
+  <td style="width:750px">
+ 
+<div class="dive">
+
+<p><b>Name:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="fname" name="firstname" placeholder="Your name.."></p>
+
+<p><b>Father's Name:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="fname" name="firstname" placeholder="Your Father's name.."></p>
+
+
+<p><b>Mother's Name:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="fname" name="firstname" placeholder="Your Mother's name.."></p>
+
+
+<p><b>Date of Birth:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="date" id="birthday" name="birthday" size="30"></p>
+
+<p><b>Email:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="fname" name="firstname" placeholder="Your Email.."></p>
+
+<p><b>Mobile No:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="fname" name="firstname" placeholder="Your Mobile No..."></p>
+<p><b>Gender:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>Male:</b><input type="radio" id="male" name="gender" value="male">&nbsp&nbsp&nbsp&nbsp<b>Female:</b>
+<input type="radio" id="female" name="gender" value="female">&nbsp&nbsp&nbsp&nbsp
+<b>Other:
+<input type="radio" id="other" name="gender" value="other">
+</p>
+<p><b>Identification Mark:</b>&nbsp&nbsp<input type="text" id="fname" name="firstname" placeholder="Your Identification Mark.."></p>
+<p><b>National Id:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="fname" name="firstname" placeholder="Your National Id.."></p>
+<p><b>Country:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<select id="country" name="country">
+    <option value="australia">India</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select></p>
+    <p><b>Mailing Address:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="fname" name="firstname" placeholder="Your Mailing Address.."></p>
+    <p><b>Permanent Address:</b>&nbsp&nbsp<input type="text" id="fname" name="firstname" placeholder="Your Permanent Address.."></p>
+</div>
+
+</td>
+<td style="width:450px" >
+  
+    <center>
+      <img src="download.png" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,1.2);">
+       <br>
+      
+    <input type="submit" value="Add Photograph"style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,1.2);">
+  
+    </center>
+   
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </td>
+</tr>
+<tr><td colspan="2">
+   <center>
+      <form action="login.html">
+    <input type="submit" value="Submit" onclick ="sub()"style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,1.2);font-size: 20px">
+  </form></center></td></tr>
+ </table></center>
+</body>
+</html>

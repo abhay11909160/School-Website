@@ -1,0 +1,249 @@
+<html>
+<head>
+	<title>Change Password</title>
+	<style>
+ 
+ body {
+  background-image: url('Screenshot_20200212_204311.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+table, th, td {
+  border-collapse: collapse;
+ padding: 5px;
+border-spacing:10px;
+}
+.dive {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+
+}
+input[type=password], select {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+ input[type=date], select {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.alert {
+  padding:5px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+.dropbtn {
+  background-color: rgba(255,255,255,0.0);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  }
+.box {
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1.2);
+  }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,1.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  font-size: 15px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #4CAF50;}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+</style>
+
+<script type="text/javascript">
+  function sub()
+  {
+var pwd=document.getElementById('txtPassword').value;
+   var cpwd=document.getElementById('txtConfirmPassword').value;
+if (pwd == cpwd){
+   window.alert("Congrats! Your Password is changed.")
+}
+else if (pwd != cpwd){
+   window.alert("Sorry! Your Password isn't changed.Try it again later.")
+
+}
+}
+ 
+   
+  </script>
+
+</head>
+<body>
+
+	<table>
+<tr>
+<td style="width:55%"><left><img style="width:300px;height:100px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,1.2);" src="logo.jpg"></left></td>
+<td><div class="box">
+<div class="dropdown">
+  <button class="dropbtn"><b>HOME</b></button>
+  <div class="dropdown-content">
+    <a href="school website.html">Home Page</a>
+    <a href="360.html">360 view of SCHOOL</a>
+    
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn"><b>ABOUT</b></button>
+  <div class="dropdown-content">
+    <a href="about.html">About School</a>
+   <a href="topper.html">Toppers Story</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn"><b>ADMISSIONS</b></button>
+  <div class="dropdown-content">
+    <a href="login.html">LogIn</a>
+    
+  
+    <a href="full-3.pdf">Fee Structure</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn"><b>GALLERY</b></button>
+  <div class="dropdown-content">
+    <a href="gallery.html">Photo Gallery</a>
+
+ 
+
+  </div>
+</div>
+
+ <div class="dropdown">
+  <button class="dropbtn"><b>CONTACT US</b></button>
+  <div class="dropdown-content">
+ <a href="contact.png">Reach Us</a>
+ 
+ 
+
+  </div>
+</div></div>
+</td> 
+</tr>
+
+</table>
+<br><br>
+<center>
+  <table style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,1.2);width:500px">
+    <tr>
+      <td>
+        <div class="dive">
+<p><b>New Password:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="password"id="txtPassword" placeholder="Your New Password.."></p>
+<p><b>Confirm Password:</b>&nbsp<input type="password" id="txtConfirmPassword" placeholder="Your Password.." oninput="check()" ></p><br><center><p id="ab"></p></center>
+  <script type="text/javascript">
+     function check() {
+var pwd=document.getElementById('txtPassword').value;
+   var cpwd=document.getElementById('txtConfirmPassword').value;
+if (pwd == cpwd){
+ 
+document.getElementById("ab").innerHTML="Password Matched";
+document.getElementById("ab").style.color = "green";
+}
+else if (pwd != cpwd){
+document.getElementById("ab").innerHTML="Password Not Matched";
+document.getElementById("ab").style.color = "red";
+
+}
+}
+  </script>
+</div>
+
+      </td>
+      </tr>
+      <tr>
+        <td>
+        <center><form action="login.html">
+          <input type="submit" value="Submit" onclick="sub()" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,1.2);font-size: 20px">
+       </form> </center>
+</td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+<p>This page can match password entered in both input password field. You can try it by entering same and different password.</p>
+</div>
+</center>
+</body>
+</html>
+  
